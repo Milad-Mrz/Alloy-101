@@ -17,4 +17,6 @@ To learn Alloy, you may find the following resources helpful:
 
 4. The Alloy book, **"Software Abstractions: Logic, Language, and Analysis"** by Daniel Jackson, provides a comprehensive introduction to the language and its applications.
 
+- https://www.cin.ufpe.br/~if721/intranet/AlloyBook.pdf
+
 5. Finally, you may find it helpful to work on some practice problems and exercises to solidify your understanding of the language. There are many resources available online that provide sample Alloy code and problems for you to solve.
