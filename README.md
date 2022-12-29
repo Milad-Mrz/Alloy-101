@@ -14,6 +14,6 @@ To learn Alloy, you may find the following resources helpful:
 
 3. There are also several online tutorials and courses available that provide more in-depth explanations of the language and its capabilities.
 
-4. The Alloy book, "Software Abstractions: Logic, Language, and Analysis" by Daniel Jackson, provides a comprehensive introduction to the language and its applications.
+4. The Alloy book, **"Software Abstractions: Logic, Language, and Analysis"** by Daniel Jackson, provides a comprehensive introduction to the language and its applications.
 
 5. Finally, you may find it helpful to work on some practice problems and exercises to solidify your understanding of the language. There are many resources available online that provide sample Alloy code and problems for you to solve.
