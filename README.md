@@ -1,4 +1,4 @@
-# Alloy-101
+# AlloyTools-101
 
 Alloy is a declarative language for describing and analyzing complex systems. It is based on first-order logic and was developed at Carnegie Mellon University by Daniel Jackson.
 
@@ -20,3 +20,10 @@ To learn Alloy, you may find the following resources helpful:
 - https://www.cin.ufpe.br/~if721/intranet/AlloyBook.pdf
 
 5. Finally, you may find it helpful to work on some practice problems and exercises to solidify your understanding of the language. There are many resources available online that provide sample Alloy code and problems for you to solve.
+
+
+**1- Installation:**
+
+1. Get **java**
+2. Download the latest version of alloy from [GitHub > AlloyTools](https://github.com/AlloyTools/org.alloytools.alloy/releases).
+3. Run the file ``` java -jar file_name.jar ```
