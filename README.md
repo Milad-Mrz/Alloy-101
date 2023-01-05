@@ -40,7 +40,7 @@ Overall, Alloy is a powerful tool for supporting the development of reliable and
 
 **1- Installation:**
 
-1. check if you have Java ```java -version``` (get one if none shown)
+1. Check if you have Java ```java -version``` (get one if none shown)
 2. Download the latest version of alloy from [GitHub > AlloyTools](https://github.com/AlloyTools/org.alloytools.alloy/releases).
 3. Run the file ``` java -jar file_name.jar ```
 ---
