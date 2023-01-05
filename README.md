@@ -1,12 +1,11 @@
 # AlloyTools-101
 
-Alloy is a declarative language for describing and analyzing complex systems. It is based on first-order logic and was developed at Carnegie Mellon University by Daniel Jackson.
-
-- How Alloy tools helps software development?
-In industry, Alloy is often used in software engineering and formal methods to support the development of reliable and secure software systems. It can be used to model and analyze systems at a high level of abstraction, helping developers to understand the behavior and properties of their systems and to identify potential issues early in the development process.
-
-Some specific ways in which Alloy is used in industry include:
-
+Alloy is a declarative language for describing and analyzing complex systems. It is based on first-order logic and was developed at Carnegie Mellon University by Daniel Jackson.<br/>
+<br/>
+**How Alloy tools helps software development?** <br/>
+<br/>
+In industry, Alloy is often used in software engineering and formal methods to support the development of reliable and secure software systems. It can be used to model and analyze systems at a high level of abstraction, helping developers to understand the behavior and properties of their systems and to identify potential issues early in the development process. Some specific ways in which Alloy is used in industry include:<br/>
+<br/>
 1- Specification and design: Alloy can be used to specify the desired behavior and properties of a software system, helping developers to understand the requirements of the system and to design a solution that meets these requirements.
 
 2- Model-based testing: Alloy can be used to generate test cases for a software system based on a model of the system's behavior. This can help developers to validate the correctness of their code and to ensure that it behaves as intended.
