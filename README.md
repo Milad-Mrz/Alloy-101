@@ -6,7 +6,7 @@ To learn Alloy, you may find the following resources helpful:
 
 1. Web pages related to the Alloy provides an overview of the language and links to some **documentation** and **tutorials**:
 
-- [alloytools.org](http://alloytools.org/)
+- [alloytools.org](https://alloytools.org/documentation.html)
 - [csail.mit.edu](https://www.csail.mit.edu/research/alloy)
 - A report on Alloy: [[pdf]](https://www.doc.ic.ac.uk/project/examples/2007/271j/suprema_on_alloy/Final%20Report/LaTeX/report.pdf)
 
