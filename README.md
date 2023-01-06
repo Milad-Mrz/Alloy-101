@@ -52,13 +52,13 @@ Overall, Alloy is a powerful tool for supporting the development of reliable and
 -**sig block_name {}** To model our system we use blocks & arrows as respectively signatures & relations. <br/>
 -**abstract sig block_name {}** is used to define a block with defined extensions or elements. <br/>
 -**sig B extends A {}** this command will define elements (B is elements of A). <br/>
--**one / lone / some** is used to define number of possible blocks in our system. For example: **one sig B,C extends A {}**<br/>
+-**one / lone / some** is used to define number of possible blocks in our system. <br/> ``` one sig B,C extends A {} ```<br/>
 these commands mean: one = {1} / lone = {0 or 1} / some = { 1 or above }
 
 
 **II) Relations:**<br/>
 -Any extension automatically makes an arrows to show the relation between a block and it's subsets <br/>
--To create a relation we can define an arrow from a domain element (A) to a range element (B) by: **sig A{arrow_name: possible_num B}** <br/>
+-To create a relation we can define an arrow from a domain element (A) to a range element (B) by: <br/> ``` sig A{arrow_name: possible_num B} ``` <br/>
 -**possible_num** will be defined by: **one / lone / some / set** <br/><br/>
 these commands mean: one = {1} / lone = {0 or 1} / some = { 1 or above } / set = { 0 or above } 
 
