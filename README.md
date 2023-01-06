@@ -44,3 +44,36 @@ Overall, Alloy is a powerful tool for supporting the development of reliable and
 2. Download the latest version of alloy from [GitHub > AlloyTools](https://github.com/AlloyTools/org.alloytools.alloy/releases).
 3. Run the file ``` java -jar file_name.jar ```
 ---
+
+**2- Getting Started:**<br/>
+
+**I) Signatures:**<br/>
+
+- **sig block_name {}** To model our system we use blocks & arrows as respectively signatures & relations. <br/>
+
+- **abstract sig block_name {}** is used to define a block with well-defined extensions or subsets or elements or members. <br/>
+
+- **sig B extends A {}** this command will define subsets (B is subset of A). <br/>
+
+- **one** / **lone** / **some** is used to define number of possible blocks in our system. <br/>
+for example: **one sig B,C extends A {}**<br/>
+
+**II) Relations:**<br/>
+- Any extension automatically make arrows to show the relation between a block and it's subsets
+
+- To create a relation we can define an arrow from a domain element (A) to a range element (B) by **sig A{arrow_name: possible_num B}** arrow_name can be any name & possible_num will be defined by  **one** / **lone** / **some** and **set**
+
+
+**III) Run and show:**<br/>
+Add following two lines to and use **crtl+E** run & show the model: <br/>
+
+**pred show() {}** <br/>
+**run show**<br/>
+
+in case you need to look at the whole model and not just an Instance or example, use **crtl+M** to view the Metamodel <br/>
+
+
+
+
+
+
