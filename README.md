@@ -114,7 +114,6 @@ And this is the Metamodel: <br/><br/>
 - domain restriction
 - range restriction
 - override
-- 
 
 
 
