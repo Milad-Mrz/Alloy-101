@@ -50,8 +50,8 @@ Overall, Alloy is a powerful tool for supporting the development of reliable and
 **I) Signatures:**<br/>
 
 -**sig block_name {}** To model our system we use blocks & arrows as respectively signatures & relations. <br/>
--**abstract sig block_name {}** is used to define a block with well-defined extensions or subsets or elements or members. <br/>
--**sig B extends A {}** this command will define subsets (B is subset of A). <br/>
+-**abstract sig block_name {}** is used to define a block with defined extensions or elements. <br/>
+-**sig B extends A {}** this command will define elements (B is elements of A). <br/>
 -**one / lone / some** is used to define number of possible blocks in our system. For example: **one sig B,C extends A {}**<br/>
 these commands mean: one = {1} / lone = {0 or 1} / some = { 1 or above }
 
@@ -93,7 +93,28 @@ And this is the Metamodel: <br/><br/>
 ![ ](./Images/2.png) 
 <br/>
 
+ ---
 
+**3- Operators:**<br/>
+
+**I-Set operators:** 
+- union **+**
+- intersection **&**
+- difference **-**
+- subset **in**
+- equality **=**
+
+**II-Relational operators:**
+- product/arrow **->**
+- dot
+- box
+- transpose
+- transitive closure
+- reflective transitive closure
+- domain restriction
+- range restriction
+- override
+- 
 
 
 
