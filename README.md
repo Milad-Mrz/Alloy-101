@@ -114,6 +114,22 @@ And this is the Metamodel: <br/><br/>
 
 **II-Relational operators:**
 - product/arrow **->**
+
+description: populate number of possible labeled arrows (relations) 
+core structure: **A m->n B** <br/>
+structure: **sig domain_sig {general_text_label: populated_sig_sub_label one -> one range_sig }** <br/>
+example code:
+``` 
+abstract sig City, Weather {}
+one sig Berlin, London, Paris extends City {}
+one sig Rainy, Sunny, Cloudy extends Weather{}
+sig Forecast {weather_at: City one -> one Weather}
+
+pred show(){}
+run show
+``` 
+
+
 - dot
 - box
 - transpose
