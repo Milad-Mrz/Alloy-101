@@ -50,23 +50,18 @@ Overall, Alloy is a powerful tool for supporting the development of reliable and
 **I) Signatures:**<br/>
 
 - **sig block_name {}** To model our system we use blocks & arrows as respectively signatures & relations. <br/>
-
 - **abstract sig block_name {}** is used to define a block with well-defined extensions or subsets or elements or members. <br/>
-
 - **sig B extends A {}** this command will define subsets (B is subset of A). <br/>
-
 - **one** / **lone** / **some** is used to define number of possible blocks in our system. For example: **one sig B,C extends A {}**<br/>
 
 **II) Relations:**<br/>
 - Any extension automatically makes an arrows to show the relation between a block and it's subsets
-
 - To create a relation we can define an arrow from a domain element (A) to a range element (B) by: <br/> **sig A{arrow_name: possible_num B}** <br/>  
 possible_num will be defined by: <br/>
 **one** / **lone** / **some** / **set** <br/><br/>
 
 **III) Run and show:**<br/>
-- Add following two lines to and use **crtl+E** run & show the model: <br/> <br/>
-
+- Add following two lines to and use **crtl+E** run & show the model: <br/>
   **pred show() {}** <br/>
   **run show**<br/><br/>
 
