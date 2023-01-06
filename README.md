@@ -84,12 +84,14 @@ Add following two lines to and use **crtl+E** run & show the model: <br/>
     run show
 
 <br/>
-Here is of an instance of the code above: <br/><br/>
+Here is of an instance of the code above: <br/><br/><br/>
+
 
 ![ ](./Images/1.png) 
 <br/>
 
-And this is the Metamodel: <br/><br/>
+And this is the Metamodel: <br/><br/><br/>
+
 ![ ](./Images/2.png) 
 <br/>
 
