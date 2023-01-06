@@ -55,22 +55,38 @@ Overall, Alloy is a powerful tool for supporting the development of reliable and
 
 - **sig B extends A {}** this command will define subsets (B is subset of A). <br/>
 
-- **one** / **lone** / **some** is used to define number of possible blocks in our system. <br/>
-for example: **one sig B,C extends A {}**<br/>
+- **one** / **lone** / **some** is used to define number of possible blocks in our system. For example: **one sig B,C extends A {}**<br/>
 
 **II) Relations:**<br/>
-- Any extension automatically make arrows to show the relation between a block and it's subsets
+- Any extension automatically makes an arrows to show the relation between a block and it's subsets
 
-- To create a relation we can define an arrow from a domain element (A) to a range element (B) by **sig A{arrow_name: possible_num B}** arrow_name can be any name & possible_num will be defined by  **one** / **lone** / **some** and **set**
-
+- To create a relation we can define an arrow from a domain element (A) to a range element (B) by: <br/> **sig A{arrow_name: possible_num B}** <br/>  
+possible_num will be defined by: <br/>
+**one** / **lone** / **some** / **set** <br/><br/>
 
 **III) Run and show:**<br/>
-Add following two lines to and use **crtl+E** run & show the model: <br/>
+- Add following two lines to and use **crtl+E** run & show the model: <br/> <br/>
 
-**pred show() {}** <br/>
-**run show**<br/>
+  **pred show() {}** <br/>
+  **run show**<br/><br/>
 
-in case you need to look at the whole model and not just an Instance or example, use **crtl+M** to view the Metamodel <br/>
+- in case you need to look at the whole model and not just an Instance or example, use **crtl+M** to view the Metamodel <br/>
+
+
+
+
+**Example code:**
+
+
+    abstract sig Type{}
+    abstract sig Name{}
+    sig Type_I , Type_II extends Type {}
+    one sig A, B, C extends Name { origin: one Type}
+
+    pred show() {}
+    run show
+  
+
 
 
 
