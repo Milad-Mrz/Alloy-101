@@ -53,11 +53,14 @@ Overall, Alloy is a powerful tool for supporting the development of reliable and
 -**abstract sig block_name {}** is used to define a block with well-defined extensions or subsets or elements or members. <br/>
 -**sig B extends A {}** this command will define subsets (B is subset of A). <br/>
 -**one / lone / some** is used to define number of possible blocks in our system. For example: **one sig B,C extends A {}**<br/>
+these commands mean: one = {1} / lone = {0 or 1} / some = { 1 or above }
+
 
 **II) Relations:**<br/>
 -Any extension automatically makes an arrows to show the relation between a block and it's subsets <br/>
 -To create a relation we can define an arrow from a domain element (A) to a range element (B) by: **sig A{arrow_name: possible_num B}** <br/>
 -**possible_num** will be defined by: **one / lone / some / set** <br/><br/>
+these commands mean: one = {1} / lone = {0 or 1} / some = { 1 or above } / set = { 0 or above } 
 
 **III) Run and show:**<br/>
 
@@ -81,12 +84,14 @@ Add following two lines to and use **crtl+E** run & show the model: <br/>
     run show
 
 <br/>
-Here is of an instance of code above: <br/>
+Here is of an instance of the code above: <br/><br/>
 
-![ ](./Images/1.png) <br/>
+![ ](./Images/1.png) 
+<br/>
 
-And this is the Metamodel: <br/>
-![ ](./Images/2.png) <br/>
+And this is the Metamodel: <br/><br/>
+![ ](./Images/2.png) 
+<br/>
 
 
 
