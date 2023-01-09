@@ -70,7 +70,7 @@ sig A{arrow_name: possible_num B}
 -**possible_num** will be defined by: **one / lone / some / set** <br/><br/>
 these commands mean: one = {1} / lone = {0 or 1} / some = { 1 or above } / set = { 0 or above } 
 
-**III) Run and show:**<br/>
+**III) Predicate, Run and show:**<br/>
 
 Add following two lines to and use **crtl+E** run & show the model: <br/>
 
@@ -101,9 +101,30 @@ And this is the Metamodel: <br/><br/>
 
 ![ ](./Images/2.png)
 <br/><br/><br/>
- ---
+---
+**3-Let's get a bit more serious:** <br/><br/><br/>
 
-**3- Operators:**<br/>
+**Predicates:** <br/>
+
+In Alloy, a pred (short for predicate) is a boolean-valued expression that specifies a condition or property that must be satisfied by a model of a system. Preds are used to define the desired behavior and properties of a system, and can be used to check whether a given model of the system satisfies these conditions.
+
+For example, you might use a pred to specify that a certain property must hold for all elements in a system, or that a certain relationship must exist between different elements. You can then use the run command to check if there is a model of the system that satisfies the pred. If a model is found, then the pred is considered to be "satisfied" by the model.
+
+Here is an example of a simple pred in Alloy:
+
+    sig Node{}
+    sig Edge{}
+    
+    pred examplePred() {
+    #Node > 2 && #Edge > 3
+    }
+    
+    run examplePred for 4 Node, 5 Edge
+
+This "pred" will create all possible models that satisfy the conditions as 3 < Edge =< 5 and 2 < Node =< 4
+
+
+**Operators:**<br/>
 
 **I-Set operators:** 
 - union **+**
@@ -113,12 +134,13 @@ And this is the Metamodel: <br/><br/>
 - equality **=**
 
 **II-Relational operators:**
-- product/arrow **->**
 
-description: populate number of possible labeled arrows (relations) 
-core structure: **A m->n B** <br/>
-structure: **sig domain_sig {general_text_label: populated_sig_sub_label one -> one range_sig }** <br/>
-example code:
+- arrow product **->** <br/>
+Description: populate number of possible labeled arrows (relations) <br/>
+Core structure: **A m->n B** <br/>
+Structure: **sig domain_sig {general_text_label: populated_sig_sub_label one -> one range_sig }** <br/>
+Example code: <br/>
+
 ``` 
 abstract sig City, Weather {}
 one sig Berlin, London, Paris extends City {}
@@ -130,15 +152,20 @@ run show
 ``` 
 
 
-- dot
-- box
-- transpose
-- transitive closure
-- reflective transitive closure
-- domain restriction
-- range restriction
-- override
+- dot **.** <br/>
+- box **[]** <br/>
+- transpose **~** <br/>
+- transitive closure **^** <br/>
+- reflective transitive closure **- - * - -** <br/>
+- domain restriction **<:** <br/>
+- range restriction **:>** <br/>
+- override **++** <br/>
 
+**III-Logical operators:** <br/>
 
-
-
+not **!** <br/>
+and **&&** <br/>
+or **||** <br/>
+implies **=>** <br/>
+else **,** <br/>
+iff **<=>** <br/>
