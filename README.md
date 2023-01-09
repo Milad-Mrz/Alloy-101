@@ -64,7 +64,7 @@ these commands mean: one = {1} / lone = {0 or 1} / some = { 1 or above }
 -Any extension is a relation and it automatically makes an arrow on Metamodel to show the relation between a block and it's elements <br/>
 -To create a relation we can define an arrow from a domain element (A) to a range element (B) by: <br/> 
 ``` 
-sig A{arrow_name: possible_num B} 
+sig A{arrow_name: possible_num B, arrow_name2: possible_num2 C, arrow_name3: possible_num3 D} 
 ``` 
 
 -**possible_num** will be defined by: **one / lone / some / set** <br/><br/>
@@ -169,3 +169,16 @@ or **||** <br/>
 implies **=>** <br/>
 else **,** <br/>
 iff **<=>** <br/>
+
+
+
+    sig Student {
+    friends: set Student
+    }
+    
+    pred showStudents() {
+    #Student > 0
+    all s: Student | #s.friends > 2
+    }
+    
+    run showStudents for 5 Student
